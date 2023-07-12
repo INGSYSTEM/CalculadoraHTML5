@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Calculadora | científica</title>
+</head>
+<body>
+  <div class="carcasa-calc">
+    <div class="logo-verificionDRG">
+      <label>Calc | JuanTech</label>
+      <div class="drg-validacion">
+        <span class="btn active">D</span>
+        <span class="btn">R</span>
+        <span class="btn">G</span>
+      </div>
+    </div>
+    <div class="pantalla">
+      <input type="text" name="pantalla-numerica" id="pantalla-numerica" placeholder="00" readonly>
+      <input type="text" name="pantalla-numerica-resultados" id="pantalla-numerica-resultados" placeholder="00" readonly>
+    </div>
+    <div class="tablero-numerico">
+      <div class="filas">
+        <button id="parentesisDerecho">(</button>
+        <button id="parentesisIzquierdo">)</button>
+        <button id="integral">∫<small>dx</small></button>
+        <button id="sumatoria">Σ<small>i</small></button>
+        <button id="productoria">π<small>i</small></button>
+        <button id="combinatoria"><small>n</small>C<small>k</small></button>
+        <button id="permutacion"><small>n</small>P<small>k</small></button>
+      </div>
+      <div class="filas">
+        <button id="c">AC</button>
+        <button id="memoria">M+</button>
+        <button id="eliminar">⌫</button>
+        <button id="dividir">/</button>
+        <button id="coseno">Cos(x)</button>
+        <button id="valorAbsoluto">abs()</button>
+        <button id="pi">π</button>
+      </div>
+      <div class="filas">
+        <button id="7">7</button>
+        <button id="8">8</button>
+        <button id="9">9</button>
+        <button id="multiplicacion">*</button>
+        <button id="seno">Sin(x)</button>
+        <button id="elevarCuadrado">X<sup>2</sup></button>
+        <button id="epsilon">e</button>
+      </div>
+      <div class="filas">
+        <button id="">6</button>
+        <button id="">5</button>
+        <button id="">4</button>
+        <button id="">-</button>
+        <button id="">Tan(x)</button>
+        <button id="raizCuadrada">√(</button>
+        <button id="">e<sup>x</sup></button>
+      </div>
+      <div class="filas">
+        <button id="">3</button>
+        <button id="">2</button>
+        <button id="">1</button>
+        <button id="">+</button>
+        <button id="">Ans</button>
+        <button id="">log<sub>b</sub>a</button>
+        <button id="mod"> MOD </button>
+      </div>
+      <div class="filas">
+        <button id="">0</button>
+        <button id="">Ans</button>
+        <button id="0">0</button>
+        <button id="igual">=</button>
+        <button id=""><small>x</small>10</button>
+        <button id="factorial">!</button>
+        <button id="drg">DRG</button>
+      </div>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>

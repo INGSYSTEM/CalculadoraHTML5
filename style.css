@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: 0;
+  font-family: var(--FuentePoppins);
+}
+
+:root {
+  --fondo: #333368;
+  --colorBlanco: #fff;
+  --colorEtiqueta: #aaaaaa;
+  --colorNegro: #000;
+  --colorCarcasa: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgb(12, 12, 12) 68%, rgb(59, 58, 58) 100%);
+  --FuentePoppins: 'Poppins', sans-serif;
+  --colorActive: #67bb06;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--fondo);
+}
+
+.carcasa-calc {
+  background: var(--colorCarcasa);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 1px 1px 15px #000;
+}
+
+.logo-verificionDRG {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 15px;
+  align-items: center;
+}
+
+.logo-verificionDRG label {
+  color: var(--colorEtiqueta);
+  font-weight: 900;
+  margin: 15px;
+  font-size: 25px;
+}
+
+span {
+  padding: 5px;
+  border-radius: 15px;
+}
+
+.logo-verificionDRG .drg-validacion span.btn {
+  color: var(--colorNegro);
+  font-weight: 900;
+  background-color: var(--colorEtiqueta);
+}
+
+.logo-verificionDRG .drg-validacion span.btn.active {
+  color: var(--colorBlanco);
+  font-weight: 900;
+  background-color: var(--colorActive);
+}
+
+.pantalla {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.pantalla input[type="text"]:focus {
+  outline: none;
+}
+
+.pantalla input[type="text"]:first-child{
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+  padding: 10px;
+  cursor: pointer;
+  text-align: left;
+}
+
+.pantalla input[type="text"]:last-child {
+  width: 100%;
+  border-radius: 0 0 15px 15px;
+  padding: 10px;
+  text-align: right;
+  cursor: pointer;
+}
+
+.tablero-numerico{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tablero-numerico button {
+  border: 1px solid;
+  width: 4rem;
+  height: 4rem;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 2px 1px 10px var(--colorEtiqueta);
+  font-weight: 900;
+  transition: all 0.3s ease;
+  background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(94,94,94,1) 100%);
+}
+
+.tablero-numerico button:hover {
+  background-color: var(--colorEtiqueta);
+  box-shadow: none;
+  cursor: pointer;
+}
